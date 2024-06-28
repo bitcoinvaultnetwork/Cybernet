@@ -1,0 +1,11 @@
+[Unit]
+Description=Cybernet Security
+
+[Service]
+WorkingDirectory=/etc/cybernet/
+Type=forking
+ExecStart=/bin/bash run.sh
+ExecStop=/bin/bash stop.sh
+
+[Install]
+WantedBy=multi-user.target
